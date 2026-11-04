@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 20</title>
+<script language="JavaScript">
+function AB_pon()
+{
+    var xa_pon = parseFloat(document.getElementById("xa_pon").value);
+    var ya_pon = parseFloat(document.getElementById("ya_pon").value);
+    var xb_pon = parseFloat(document.getElementById("xb_pon").value);
+    var yb_pon = parseFloat(document.getElementById("yb_pon").value);
+    var wynik = Math.sqrt((xb_pon - xa_pon) * (xb_pon - xa_pon) + (yb_pon - ya_pon) * (yb_pon - ya_pon));
+    document.getElementById("wynik_AB").innerHTML = "AB = " + wynik.toFixed(2);
+}
+
+function BC_pon()
+{
+    var xb_pon = parseFloat(document.getElementById("xb_pon").value);
+    var yb_pon = parseFloat(document.getElementById("yb_pon").value);
+    var xc_pon = parseFloat(document.getElementById("xc_pon").value);
+    var yc_pon = parseFloat(document.getElementById("yc_pon").value);
+    var wynik = Math.sqrt((xc_pon - xb_pon) * (xc_pon - xb_pon) + (yc_pon - yb_pon) * (yc_pon - yb_pon));
+    document.getElementById("wynik_BC").innerHTML = "BC = " + wynik.toFixed(2);
+}
+
+function AC_pon()
+{
+    var xa_pon = parseFloat(document.getElementById("xa_pon").value);
+    var ya_pon = parseFloat(document.getElementById("ya_pon").value);
+    var xc_pon = parseFloat(document.getElementById("xc_pon").value);
+    var yc_pon = parseFloat(document.getElementById("yc_pon").value);
+    var wynik = Math.sqrt((xc_pon - xa_pon) * (xc_pon - xa_pon) + (yc_pon - ya_pon) * (yc_pon - ya_pon));
+    document.getElementById("wynik_AC").innerHTML = "AC = " + wynik.toFixed(2);
+}
+</script>
+</head>
+<body>
+<h1>Obliczanie boków trójkąta</h1>
+
+<p>Punkt A: x = <input type="number" id="xa_pon"> y = <input type="number" id="ya_pon"></p>
+<p>Punkt B: x = <input type="number" id="xb_pon"> y = <input type="number" id="yb_pon"></p>
+<p>Punkt C: x = <input type="number" id="xc_pon"> y = <input type="number" id="yc_pon"></p>
+
+<input type="button" value="Oblicz AB" onclick="AB_pon()">
+<div id="wynik_AB"></div>
+<input type="button" value="Oblicz BC" onclick="BC_pon()">
+<div id="wynik_BC"></div>
+<input type="button" value="Oblicz AC" onclick="AC_pon()">
+<div id="wynik_AC"></div>
+</body>
+</html>

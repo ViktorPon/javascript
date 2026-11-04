@@ -1,0 +1,35 @@
+<textarea rows="100" cols="100">
+<!DOCTYPE html>   
+<head>    
+<title> proste obliczenia</title>    
+<meta charset="utf-8">  
+<style>
+    body {
+        background-color:grey;
+    }
+</style>
+</head>  
+<body> 
+<div style="color:rgb(34, 0, 255);font-size:50px;"> 
+<script language="JavaScript"> 
+
+var x1=prompt("x1=",""); 
+var x2=prompt("x2=","");
+x1=parseFloat(x1);
+x2=parseFloat(x2);
+x1_rad=Math.PI*x1/180;
+y1=3*Math.pow(x1,6/8);
+y2=2*Math.cos(x1_rad)+3*Math.sin(x1_rad);
+y3=Math.cbrt(Math.pow(x1,5)+2*Math.pow(x2,4))*Math.abs(x1-x2);
+document.write("x1="+x1.toFixed(2)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp");
+document.write("x2="+x2.toFixed(2)+"<br>");
+document.write("x1="+x1.toFixed(2)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp");
+document.write("x1_rad="+x1_rad.toFixed(2)+"<br>");
+document.write("y1="+y1.toFixed(2)+"<br>"); 
+document.write("y2="+y2.toFixed(2)+"<br>"); 
+document.write("y3="+y3.toFixed(2)+"<br>"); 
+</script> 
+</div> 
+</body> 
+</html>
+</textarea>

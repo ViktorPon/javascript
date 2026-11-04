@@ -1,0 +1,19 @@
+<html>
+<head> 
+    <title>zadanie 16</title>
+</head>
+<body>
+    <div style="text-align: center;font-size: 30px;">
+        <script language="JavaScript">
+            var liczba1 = prompt("A=","");
+            var liczba2 = prompt("B=","");
+            var A=parseFloat(liczba1);
+            var B=parseFloat(liczba2);
+            document.write("wczytane liczby A="+A+"  B="+B+"<br>");
+            document.write("(",A+"+"+B+")^3=");
+            document.write(A+"^3+3*"+A+"^2*"+B+"+3*"+A+"*"+B+"^2+"+B+"^3"+"=");
+            document.write(Math.pow(A, 3)+3*Math.pow(A, 2)*B+3*A*Math.pow(B, 2)+Math.pow(B, 3)+"<br>");
+        </script>
+    </div>
+</body>
+</html>

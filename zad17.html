@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 17 - teoria</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 32px 16px;
+            background: #f2f4f1;
+            color: #252b27;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        main {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 32px;
+            background: #ffffff;
+            border-top: 5px solid #47745a;
+        }
+        h1 {
+            margin-top: 0;
+            color: #31543f;
+            text-align: center;
+        }
+        h2 {
+            margin: 28px 0 10px;
+            color: #31543f;
+            font-size: 19px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #cbd4cd;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #e8eee9;
+            color: #31543f;
+        }
+        code {
+            color: #31543f;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+            main {
+                padding: 20px 16px;
+            }
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Zadanie 17</h1>
+
+        <h2>1. Wymień cztery sposoby wyprowadzania danych w JS.</h2>
+        <ul>
+            <li>z użyciem document.write()</li>
+            <li>z użyciem okienka alert()</li>
+            <li>do okienek formularza</li>
+            <li>do tabeli</li>
+        </ul>
+
+        <h2>2. Czym jest funkcja w JS? Omów przy użyciu 4 podpunktów.</h2>
+        <ul>
+            <li>Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy.</li>
+            <li>Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod.</li>
+            <li>Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma (x,y), b.</li>
+            <li>Może (nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return.</li>
+        </ul>
+
+        <h2>3. Omów metody getElementById, getElementByName, getElementByTagName.</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Metoda</th>
+                    <th>Opis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>getElementById("id")</code></td>
+                    <td>dostęp do wszystkich elementów o konkretnej wartości atrybutu id</td>
+                </tr>
+                <tr>
+                    <td><code>getElementByTagName("znacznik")</code></td>
+                    <td>dostęp do wszystkich elementów o typie znacznika, np. p lub DIV</td>
+                </tr>
+                <tr>
+                    <td><code>getElementByName("nazwa")</code></td>
+                    <td>dostęp do wszystkich elementów o konkretnej wartości atrybutu name</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>4. Omów właściwości innerHTML, innerText, className. Każdą osobno.</h2>
+        <ul>
+            <li><code>innerHTML</code> – jest to właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie albo usunięcie kodu HTML z danego elementu HTML, np. w tabeli.</li>
+            <li><code>innerText</code> – umożliwia określenie ciągu znaków, który zostanie umieszczony w elemencie.</li>
+            <li><code>className</code> – umożliwia określenie klasy CSS użytej do prezentacji elementu.</li>
+        </ul>
+    </main>
+</body>
+</html>

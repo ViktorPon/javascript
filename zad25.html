@@ -1,0 +1,26 @@
+<!DOCTYPE html>   
+<head>    
+<title> proste obliczenia</title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:red;font-size:50px;"> 
+<script language="JavaScript"> 
+var N0=prompt("N0=",""); 
+var t=prompt("t=","");
+var T1_2=prompt("T1/2=","");
+var suma; 
+var N0=parseFloat(N0); 
+var t=parseFloat(t); 
+var T1_2=parseFloat(T1_2);
+var lambda=Math.LN2/T1_2
+var N=N0*Math.pow(Math.E,-lambda*t);
+document.write("N0="+N0+"[l=sztuk]<br>");
+document.write("t="+t+"[lat]<br>");
+document.write("T1/2="+T1_2+"[lat]<br>");
+document.write("lambda="+lambda.toFixed(2)+"[1/rok]<br>");
+document.write("N="+N.toFixed(2)+"[sztuk]<br>");
+</script> 
+</div> 
+</body> 
+</html> 
